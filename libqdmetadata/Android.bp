@@ -2,6 +2,7 @@ cc_library_shared {
     name: "libqdMetaData",
     vendor: true,
     cflags: [
+        "-DGRALLOC_HANDLE_HAS_RESERVED_SIZE",
         "-Wno-sign-conversion",
         "-DLOG_TAG=\"qdmetadata\"",
         "-D__QTI_DISPLAY_GRALLOC__",
